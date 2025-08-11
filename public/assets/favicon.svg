@@ -1,0 +1,11 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- Octopus favicon - designed for small display -->
+  <!-- Simple head -->
+  <circle cx="16" cy="10" r="6" fill="#C3682B"/>
+  <!-- Single eye -->
+  <circle cx="14" cy="8" r="1" fill="#000000"/>
+  <!-- 3 simple tentacles -->
+  <path d="M 10 16 L 8 24" stroke="#C3682B" stroke-width="3" fill="none"/>
+  <path d="M 16 16 L 14 24" stroke="#C3682B" stroke-width="3" fill="none"/>
+  <path d="M 22 16 L 20 24" stroke="#C3682B" stroke-width="3" fill="none"/>
+</svg> 
