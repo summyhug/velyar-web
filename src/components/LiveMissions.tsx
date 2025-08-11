@@ -39,7 +39,7 @@ const CommunityConnections = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-background to-secondary/20">
+    <section id="connections" className="py-20 bg-gradient-to-br from-background to-secondary/20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <div className="relative inline-block mb-6">

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const Footer = () => {
   const socialLinks = [
     { name: 'Twitter', icon: '𝕏', url: '#' },
@@ -7,7 +9,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-primary text-white py-16">
+    <footer id="contact" className="bg-primary text-white py-16">
       <div className="container mx-auto px-4">
         {/* App Teaser Section */}
         <div className="text-center mb-12">
@@ -17,15 +19,6 @@ const Footer = () => {
           <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
             Join thousands of people sharing their stories and discovering new perspectives every day.
           </p>
-          
-          {/* Mobile Mockup Placeholder */}
-          <div className="bg-white/10 rounded-3xl p-8 mb-8 max-w-sm mx-auto">
-            <div className="bg-white rounded-2xl p-4 text-primary text-center">
-              <div className="text-4xl mb-2">📱</div>
-              <p className="font-semibold">Velyar App</p>
-              <p className="text-sm opacity-70">Download to start sharing</p>
-            </div>
-          </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <button className="btn-secondary">
@@ -81,8 +74,8 @@ const Footer = () => {
             <h3 className="font-bold text-lg mb-4">Support</h3>
             <ul className="space-y-2">
               <li><a href="#" className="text-white/80 hover:text-white transition-colors">Help Center</a></li>
-              <li><a href="#" className="text-white/80 hover:text-white transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="text-white/80 hover:text-white transition-colors">Terms of Service</a></li>
+              <li><Link to="/privacy" className="text-white/80 hover:text-white transition-colors">Privacy Policy</Link></li>
+              <li><Link to="/terms" className="text-white/80 hover:text-white transition-colors">Terms of Service</Link></li>
               <li><a href="#" className="text-white/80 hover:text-white transition-colors">Community Guidelines</a></li>
             </ul>
           </div>

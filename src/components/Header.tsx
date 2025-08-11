@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,27 +23,41 @@ const Header = () => {
       <div className="container mx-auto px-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
-          <img 
-            src="/assets/velyar_logo_full.svg" 
-            alt="Velyar" 
-            className="h-8 md:h-10"
-          />
+          <Link to="/">
+            <img 
+              src="/assets/velyar_logo_full.svg" 
+              alt="Velyar" 
+              className="h-8 md:h-10"
+            />
+          </Link>
         </div>
 
         {/* Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="#home" className="text-primary hover:text-accent transition-colors font-medium">
+          <Link 
+            to="/" 
+            className={`text-primary hover:text-accent transition-colors font-medium ${
+              location.pathname === '/' ? 'text-accent' : ''
+            }`}
+          >
             Home
-          </a>
-          <a href="#about" className="text-primary hover:text-accent transition-colors font-medium">
+          </Link>
+          <Link 
+            to="/about" 
+            className={`text-primary hover:text-accent transition-colors font-medium ${
+              location.pathname === '/about' ? 'text-accent' : ''
+            }`}
+          >
             About
-          </a>
-          <a href="#app" className="text-primary hover:text-accent transition-colors font-medium">
-            App
-          </a>
-          <a href="#contact" className="text-primary hover:text-accent transition-colors font-medium">
+          </Link>
+          <Link 
+            to="/contact" 
+            className={`text-primary hover:text-accent transition-colors font-medium ${
+              location.pathname === '/contact' ? 'text-accent' : ''
+            }`}
+          >
             Contact
-          </a>
+          </Link>
         </nav>
 
         {/* Mobile menu button */}
