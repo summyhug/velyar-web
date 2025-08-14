@@ -164,24 +164,20 @@ const Contact = () => {
                  </div>
                </div>
 
-               {/* Account Deletion */}
-               <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-8 border border-primary/10">
-                 <h3 className="text-2xl font-bold text-primary mb-4">Account Deletion</h3>
-                 <p className="text-primary/70 mb-4 leading-relaxed">
-                   Need to delete your account? We're here to help. Please note that account deletion is permanent and cannot be undone.
-                 </p>
-                 <button 
-                   onClick={() => {
-                     const mailtoLink = `mailto:privacy@velyar.com?subject=${encodeURIComponent('Account Deletion Request')}&body=${encodeURIComponent(
-                       `I would like to request deletion of my Velyar account.\n\nPlease confirm the email address associated with my account: [Your email]\n\nI understand that this action is permanent and cannot be undone.\n\nThank you.`
-                     )}`;
-                     window.location.href = mailtoLink;
-                   }}
-                   className="text-accent hover:text-accent/80 font-medium transition-colors"
-                 >
-                   Request Account Deletion →
-                 </button>
-               </div>
+                               {/* Account Deletion Link */}
+                <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-6 border border-primary/10">
+                  <div className="text-center">
+                    <p className="text-primary/70 mb-3 text-sm">
+                      Need to delete your account? 
+                    </p>
+                    <a 
+                      href="/account-deletion"
+                      className="text-accent hover:text-accent/80 font-medium transition-colors text-sm underline"
+                    >
+                      Request account deletion →
+                    </a>
+                  </div>
+                </div>
 
               {/* Response Time */}
               <div className="bg-gradient-to-r from-primary to-accent rounded-2xl p-8 text-white">

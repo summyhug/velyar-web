@@ -6,87 +6,113 @@ const TermsPage = () => {
     <div className="min-h-screen">
       <Header />
       <section className="py-20 bg-gradient-to-br from-background to-secondary/10">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            {/* Header */}
-            <div className="text-center mb-16">
-              <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-                Terms of Service
-              </h1>
-              <p className="text-xl text-primary/70">
-                Last updated: [Date]
-              </p>
-            </div>
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-primary/10">
+            <h1 className="text-3xl font-bold text-primary mb-8">Terms of Service</h1>
+            
+            <div className="space-y-8 text-primary/80 leading-relaxed">
+              <section>
+                <h3 className="font-semibold text-primary mb-3 text-lg">1. Acceptance of Terms</h3>
+                <p>By accessing and using Velyar, you accept and agree to be bound by the terms and provision of this agreement.</p>
+              </section>
 
-            {/* Content */}
-            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-primary/10">
-              <div className="prose prose-lg max-w-none text-primary">
-                <h2 className="text-2xl font-bold text-primary mb-4">1. Acceptance of Terms</h2>
-                <p className="text-primary/70 mb-6">
-                  [Placeholder: Terms of service content will be added here. This should include sections on:
-                  user responsibilities, acceptable use, intellectual property, disclaimers, 
-                  limitation of liability, termination, and governing law.]
-                </p>
+              <section>
+                <h3 className="font-semibold text-primary mb-3 text-lg">2. Content Guidelines</h3>
+                <p>Users are responsible for the content they upload. Prohibited content includes but is not limited to:</p>
+                <ul className="list-disc pl-6 mt-3 space-y-2">
+                  <li>Illegal, harmful, or offensive material</li>
+                  <li>Content violating intellectual property rights</li>
+                  <li>Spam, misleading, or deceptive content</li>
+                  <li>Personal information of others without consent</li>
+                </ul>
+              </section>
 
-                <h2 className="text-2xl font-bold text-primary mb-4">2. User Responsibilities</h2>
-                <p className="text-primary/70 mb-6">
-                  [Placeholder: Content about user responsibilities, community guidelines, 
-                  and acceptable behavior on the platform.]
-                </p>
+              <section>
+                <h3 className="font-semibold text-primary mb-3 text-lg">3. Age Requirements and Restrictions</h3>
+                <p>You must be at least 13 years old to use this service. Users under 16 may have restricted access to certain features to comply with data protection laws.</p>
+                <ul className="list-disc pl-6 mt-3 space-y-2">
+                  <li>Users must provide accurate date of birth information</li>
+                  <li>Age verification is required for account creation</li>
+                  <li>Restricted accounts have limited feature access for safety</li>
+                  <li>False age information may result in account suspension</li>
+                </ul>
+              </section>
 
-                <h2 className="text-2xl font-bold text-primary mb-4">3. Intellectual Property</h2>
-                <p className="text-primary/70 mb-6">
-                  [Placeholder: Information about who owns what content, licensing terms, 
-                  and user-generated content rights.]
-                </p>
+              <section>
+                <h3 className="font-semibold text-primary mb-3 text-lg">4. User Conduct</h3>
+                <p>Users must not engage in activities that could harm the platform or other users, including but not limited to hacking, harassment, or misuse of the platform.</p>
+              </section>
 
-                <h2 className="text-2xl font-bold text-primary mb-4">4. Privacy and Data</h2>
-                <p className="text-primary/70 mb-6">
-                  [Placeholder: How user data is collected, used, and protected. 
-                  Reference to Privacy Policy for detailed information.]
-                </p>
+              <section>
+                <h3 className="font-semibold text-primary mb-3 text-lg">5. Content Reporting and Community Moderation</h3>
+                <p>We employ a community-based moderation system where users can report content that violates our guidelines. Content may be automatically hidden after multiple reports.</p>
+                <ul className="list-disc pl-6 mt-3 space-y-2">
+                  <li>Users can report inappropriate, harmful, or illegal content</li>
+                  <li>Reports are reviewed within 24 hours by our moderation team</li>
+                  <li>Multiple reports may result in automatic content hiding</li>
+                  <li>False or malicious reports may result in account restrictions</li>
+                  <li>Anonymous reporting system protects user privacy</li>
+                </ul>
+              </section>
 
-                <h2 className="text-2xl font-bold text-primary mb-4">5. Disclaimers</h2>
-                <p className="text-primary/70 mb-6">
-                  [Placeholder: Legal disclaimers about service availability, 
-                  accuracy of content, and third-party services.]
-                </p>
+              <section>
+                <h3 className="font-semibold text-primary mb-3 text-lg">6. Appeal Process</h3>
+                <p>Content creators have the right to appeal moderation decisions within 30 days of action being taken.</p>
+                <ul className="list-disc pl-6 mt-3 space-y-2">
+                  <li>Appeals are reviewed by human moderators within 48 hours</li>
+                  <li>Only one appeal per piece of content is allowed</li>
+                  <li>Detailed explanations must be provided for appeal consideration</li>
+                  <li>Successful appeals result in immediate content restoration</li>
+                  <li>Appeal decisions are final and binding</li>
+                </ul>
+              </section>
 
-                <h2 className="text-2xl font-bold text-primary mb-4">6. Limitation of Liability</h2>
-                <p className="text-primary/70 mb-6">
-                  [Placeholder: Legal limitations on Velyar's liability for damages 
-                  arising from use of the service.]
-                </p>
+              <section>
+                <h3 className="font-semibold text-primary mb-3 text-lg">7. Privacy and Data Protection</h3>
+                <p>We are committed to protecting your privacy in accordance with GDPR and other applicable data protection laws. Please refer to our Privacy Policy for detailed information.</p>
+              </section>
 
-                <h2 className="text-2xl font-bold text-primary mb-4">7. Termination</h2>
-                <p className="text-primary/70 mb-6">
-                  [Placeholder: Terms for account termination, both by user and by Velyar, 
-                  and what happens to user data upon termination.]
-                </p>
+              <section>
+                <h3 className="font-semibold text-primary mb-3 text-lg">8. Automated Content Moderation</h3>
+                <p>We employ automated systems to detect and prevent the upload of prohibited content before it appears on our platform.</p>
+                <ul className="list-disc pl-6 mt-3 space-y-2">
+                  <li>Automated filtering for text and visual content</li>
+                  <li>Real-time content analysis during upload</li>
+                  <li>Machine learning systems continuously improve detection</li>
+                  <li>Automated actions are logged for transparency</li>
+                  <li>Users can appeal automated decisions</li>
+                </ul>
+              </section>
 
-                <h2 className="text-2xl font-bold text-primary mb-4">8. Changes to Terms</h2>
-                <p className="text-primary/70 mb-6">
-                  [Placeholder: How and when terms may be updated, and how users 
-                  will be notified of changes.]
-                </p>
+              <section>
+                <h3 className="font-semibold text-primary mb-3 text-lg">9. Transparency and Compliance</h3>
+                <p>We maintain transparency in our moderation practices and publish regular transparency reports.</p>
+                <ul className="list-disc pl-6 mt-3 space-y-2">
+                  <li>Quarterly transparency reports on moderation actions</li>
+                  <li>Clear documentation of community guidelines</li>
+                  <li>Regular updates to moderation policies</li>
+                  <li>Compliance with Digital Services Act (DSA) requirements</li>
+                  <li>User access to their moderation history</li>
+                </ul>
+              </section>
 
-                <h2 className="text-2xl font-bold text-primary mb-4">9. Governing Law</h2>
-                <p className="text-primary/70 mb-6">
-                  [Placeholder: Which jurisdiction's laws govern these terms and 
-                  where disputes will be resolved.]
-                </p>
+              <section>
+                <h3 className="font-semibold text-primary mb-3 text-lg">10. Limitation of Liability</h3>
+                <p>Velyar is provided "as is" without warranties. We shall not be liable for any damages arising from the use of our platform.</p>
+              </section>
 
-                <h2 className="text-2xl font-bold text-primary mb-4">10. Contact Information</h2>
-                <p className="text-primary/70 mb-6">
-                  [Placeholder: How to contact Velyar with questions about these terms.]
-                </p>
+              <section>
+                <h3 className="font-semibold text-primary mb-3 text-lg">11. Changes to Terms</h3>
+                <p>We reserve the right to modify these terms at any time. Users will be notified of significant changes.</p>
+              </section>
 
-                <div className="bg-accent/10 rounded-lg p-6 mt-8">
-                  <p className="text-primary/80 text-sm">
-                    <strong>Note:</strong> This is a placeholder Terms of Service. Please replace with your actual terms 
-                    from the velyar-global-stories project or have them reviewed by legal counsel.
-                  </p>
-                </div>
+              <section>
+                <h3 className="font-semibold text-primary mb-3 text-lg">12. Contact Information</h3>
+                <p>For questions about these terms, please contact us through our support channels.</p>
+              </section>
+
+              <div className="text-sm text-primary/60 pt-6 border-t border-primary/20">
+                Last updated: {new Date().toLocaleDateString()}
               </div>
             </div>
           </div>
