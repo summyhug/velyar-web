@@ -32,9 +32,9 @@ const CommunityValues = () => {
           
           <div className="bg-background rounded-3xl p-8 md:p-12 mb-16">
             <p className="text-2xl md:text-3xl text-primary leading-relaxed font-medium">
-              "Velyar is a community without algorithms, borders, or like buttons. 
+              "Velyar is a community built on authenticity, not algorithms. 
               <br />
-              Just humans, sharing what matters."
+              No borders, no performance, just humans sharing their real world."
             </p>
           </div>
 

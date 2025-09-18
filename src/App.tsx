@@ -5,6 +5,7 @@ import ContactPage from './components/ContactPage';
 import TermsPage from './components/TermsPage';
 import PrivacyPage from './components/PrivacyPage';
 import AccountDeletionPage from './components/AccountDeletionPage';
+import CSAEStandardsPage from './components/CSAEStandardsPage';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/terms" element={<TermsPage />} />
         <Route path="/privacy" element={<PrivacyPage />} />
         <Route path="/account-deletion" element={<AccountDeletionPage />} />
+        <Route path="/safety" element={<CSAEStandardsPage />} />
       </Routes>
     </Router>
   );

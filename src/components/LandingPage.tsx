@@ -1,5 +1,6 @@
 import Header from './Header';
 import Hero from './Hero';
+import AppPreview from './AppPreview';
 import HowItWorks from './HowItWorks';
 import CommunityConnections from './LiveMissions';
 import CommunityValues from './CommunityValues';
@@ -12,6 +13,7 @@ const LandingPage = () => {
       <Hero />
       <HowItWorks />
       <CommunityConnections />
+      <AppPreview />
       <CommunityValues />
       <Footer />
     </div>

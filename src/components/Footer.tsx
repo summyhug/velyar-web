@@ -1,12 +1,6 @@
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
-  const socialLinks = [
-    { name: 'Twitter', icon: '𝕏', url: '#' },
-    { name: 'Instagram', icon: '📷', url: '#' },
-    { name: 'YouTube', icon: '▶️', url: '#' },
-    { name: 'TikTok', icon: '🎵', url: '#' }
-  ];
 
   return (
     <footer id="contact" className="bg-primary text-white py-16">
@@ -44,18 +38,6 @@ const Footer = () => {
             <p className="text-white/80 mb-4 max-w-md">
               Connecting people across cultures through daily video prompts and authentic conversations.
             </p>
-            <div className="flex space-x-4">
-              {socialLinks.map((social, index) => (
-                <a 
-                  key={index}
-                  href={social.url}
-                  className="text-2xl hover:opacity-70 transition-opacity"
-                  aria-label={social.name}
-                >
-                  {social.icon}
-                </a>
-              ))}
-            </div>
           </div>
 
           {/* Quick Links */}
@@ -76,6 +58,7 @@ const Footer = () => {
               <li><a href="#" className="text-white/80 hover:text-white transition-colors">Help Center</a></li>
               <li><Link to="/privacy" className="text-white/80 hover:text-white transition-colors">Privacy Policy</Link></li>
               <li><Link to="/terms" className="text-white/80 hover:text-white transition-colors">Terms of Service</Link></li>
+              <li><Link to="/safety" className="text-white/80 hover:text-white transition-colors">Child Safety</Link></li>
               <li><a href="#" className="text-white/80 hover:text-white transition-colors">Community Guidelines</a></li>
             </ul>
           </div>
@@ -84,7 +67,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="text-center pt-8 mt-8 border-t border-white/20">
           <p className="text-white/60">
-            © 2024 Velyar. All rights reserved. Made with ❤️ for global connection.
+            © 2024 Unfixedtime UG. All rights reserved. Made with ❤️ for global connection.
           </p>
         </div>
       </div>

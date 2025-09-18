@@ -7,7 +7,7 @@ const HowItWorks = () => {
     },
     {
       icon: "🎥",
-      title: "Share Your Video Story",
+      title: "Respond",
       description: "Record a short video response and connect with others who share your curiosity and openness."
     },
     {

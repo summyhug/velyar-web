@@ -60,8 +60,8 @@ const CommunityConnections = () => {
             Reaching Across Differences
           </h2>
           <p className="text-xl text-primary/70 max-w-3xl mx-auto leading-relaxed">
-            Social media has trapped us in echo chambers, but we're more alike than different. 
-            Like an octopus reaching in many directions, Velyar connects you with people who think, 
+            Social media has trapped us in echo chambers, turning us against one another and rejecting the vibrancy of the human experience. 
+            We are more alike than different. Like an octopus reaching in many directions, Velyar connects you with people who think, 
             live, and believe differently than you do.
           </p>
         </div>
@@ -91,20 +91,6 @@ const CommunityConnections = () => {
           ))}
         </div>
 
-        <div className="text-center">
-          <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-8 max-w-2xl mx-auto border border-primary/10">
-            <h3 className="text-2xl font-bold text-primary mb-4">
-              The Algorithm-Free Zone
-            </h3>
-            <p className="text-primary/70 mb-6 leading-relaxed">
-              No engagement metrics. No profit-driven content. Just genuine human connections 
-              that remind us we have more in common than we think.
-            </p>
-            <button className="btn-secondary">
-              Start Connecting Today
-            </button>
-          </div>
-        </div>
       </div>
     </section>
   );
