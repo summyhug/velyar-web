@@ -1,3 +1,5 @@
+import { getAppStoreUrl, getDownloadButtonText } from '../utils/deviceDetection';
+
 const Hero = () => {
   const scrollToHowItWorks = () => {
     const element = document.getElementById('how-it-works');
@@ -43,9 +45,14 @@ const Hero = () => {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center animate-fade-in" style={{ animationDelay: '0.4s' }}>
-                <button className="bg-[#285A66] text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-opacity-90 transition-all duration-200 shadow-lg hover:shadow-xl">
-                  Download the App
-                </button>
+                <a 
+                  href={getAppStoreUrl()}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#285A66] text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-opacity-90 transition-all duration-200 shadow-lg hover:shadow-xl inline-block text-center"
+                >
+                  {getDownloadButtonText()}
+                </a>
                 <button 
                   onClick={scrollToHowItWorks}
                   className="border-2 border-[#285A66] text-[#285A66] px-8 py-4 rounded-lg font-semibold text-lg hover:bg-[#285A66] hover:text-white transition-all duration-200"

@@ -1,3 +1,4 @@
+
 const AppPreview = () => {
   const features = [
     {
@@ -86,12 +87,22 @@ const AppPreview = () => {
                 No algorithms, just human connections.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="bg-white text-[#285A66] px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-all duration-200 shadow-lg">
+                <a 
+                  href="https://apps.apple.com/app/velyar/id1234567890"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white text-[#285A66] px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-all duration-200 shadow-lg inline-block text-center"
+                >
                   Download for iOS
-                </button>
-                <button className="bg-white/20 text-white border-2 border-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-[#285A66] transition-all duration-200">
+                </a>
+                <a 
+                  href="https://play.google.com/store/apps/details?id=app.lovable.e717c17b39ea497bb3f0803db35e66f4&pcampaignid=web_share"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white/20 text-white border-2 border-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-[#285A66] transition-all duration-200 inline-block text-center"
+                >
                   Download for Android
-                </button>
+                </a>
               </div>
             </div>
           </div>

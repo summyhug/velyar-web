@@ -15,12 +15,22 @@ const Footer = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button className="btn-secondary">
+            <a 
+              href="https://apps.apple.com/app/velyar/id1234567890"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-secondary"
+            >
               Download for iOS
-            </button>
-            <button className="btn-secondary">
+            </a>
+            <a 
+              href="https://play.google.com/store/apps/details?id=app.lovable.e717c17b39ea497bb3f0803db35e66f4&pcampaignid=web_share"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-secondary"
+            >
               Download for Android
-            </button>
+            </a>
           </div>
         </div>
 
