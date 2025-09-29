@@ -96,7 +96,7 @@ const AppPreview = () => {
                   Download for iOS
                 </a>
                 <a 
-                  href="https://play.google.com/store/apps/details?id=app.lovable.e717c17b39ea497bb3f0803db35e66f4&pcampaignid=web_share"
+                  href="https://play.google.com/store/apps/details?id=com.velyar.app"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-white/20 text-white border-2 border-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-[#285A66] transition-all duration-200 inline-block text-center"

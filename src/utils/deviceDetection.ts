@@ -26,10 +26,10 @@ export const getAppStoreUrl = (): string => {
     // Replace with actual iOS App Store URL when available
     return 'https://apps.apple.com/app/velyar/id1234567890';
   } else if (isAndroid()) {
-    return 'https://play.google.com/store/apps/details?id=app.lovable.e717c17b39ea497bb3f0803db35e66f4&pcampaignid=web_share';
+    return 'https://play.google.com/store/apps/details?id=com.velyar.app';
   } else {
     // Default to Android for desktop users
-    return 'https://play.google.com/store/apps/details?id=app.lovable.e717c17b39ea497bb3f0803db35e66f4&pcampaignid=web_share';
+    return 'https://play.google.com/store/apps/details?id=com.velyar.app';
   }
 };
 

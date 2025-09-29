@@ -24,7 +24,7 @@ const Footer = () => {
               Download for iOS
             </a>
             <a 
-              href="https://play.google.com/store/apps/details?id=app.lovable.e717c17b39ea497bb3f0803db35e66f4&pcampaignid=web_share"
+              href="https://play.google.com/store/apps/details?id=com.velyar.app"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-secondary"
