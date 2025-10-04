@@ -37,7 +37,7 @@ const Hero = () => {
             {/* Left Column - Text Content */}
             <div className="text-center lg:text-left">
               <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-[#285A66] mb-6 leading-tight animate-fade-in">
-                The world isn't as divided as it seems.
+                The social network for everyone.
               </h1>
               
               <p className="text-lg md:text-xl lg:text-2xl text-[#697B85] mb-8 max-w-2xl mx-auto lg:mx-0 animate-fade-in" style={{ animationDelay: '0.2s' }}>

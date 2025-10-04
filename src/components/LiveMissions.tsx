@@ -57,7 +57,7 @@ const CommunityConnections = () => {
           </div>
           
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-            Reaching Across Differences
+            Reaching Across the Divide
           </h2>
           <p className="text-xl text-primary/70 max-w-3xl mx-auto leading-relaxed">
             Social media has trapped us in echo chambers, turning us against one another and rejecting the vibrancy of the human experience. 
